@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading-screen {
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-white/40 flex items-center justify-center z-50;
+  backdrop-filter: saturate(1.8) blur(12px);
+
+  &.hidden {
+    display: none !important;
+  }
+}
